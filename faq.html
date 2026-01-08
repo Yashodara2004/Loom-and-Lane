@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Loom & Lane — FAQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Shipping Banner -->
+<div class="shipping-banner text-center"> 
+  <i class="fa fa-truck me-2"></i> 
+  <span>✨ Free International Shipping on Orders Over $100 ✨</span> 
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg"> 
+  <div class="container"> 
+    <a class="navbar-brand" href="home.html">
+      <img src="pictures/WL.png" alt="Loom & Lane Logo" class="logo-img">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navMenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="listing.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+        <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Search form -->
+      <form class="d-flex me-3" role="search" id="globalSearchForm">
+        <input class="form-control me-2" type="search" placeholder="Search products..." id="globalSearchInput">
+        <button class="btn btn-outline-secondary" type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+
+      <!-- Right side controls -->
+      <div class="d-flex align-items-center gap-3">
+        <button class="icon-btn" id="darkModeToggle">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <a href="cart.html" class="btn btn-outline-secondary position-relative">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- FAQ Section -->
+<section class="container my-5" id="faqSection">
+  <h1 class="h4 mb-4">Frequently Asked Questions</h1>
+
+  <div class="accordion" id="faqAccordion">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq1">
+          What is Loom and Lane known for?
+        </button>
+      </h2>
+      <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Loom and Lane specializes in elegant Sri Lankan home décor, crafts, and accessories.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+          Do you ship internationally?
+        </button>
+      </h2>
+      <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Yes, we ship worldwide. Orders over $100 qualify for free international shipping.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+          What payment methods are accepted?
+        </button>
+      </h2>
+      <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          We accept major credit cards, PayPal, and secure online payment gateways.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">
+          How long does delivery take?
+        </button>
+      </h2>
+      <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Standard shipping takes 5–7 business days, while express shipping arrives in 2–3 days.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq6">
+          Can I return or exchange items?
+        </button>
+      </h2>
+      <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Yes, returns and exchanges are accepted within 14 days of delivery if items are unused.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq7">
+          Do you offer gift wrapping?
+        </button>
+      </h2>
+      <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Yes, we provide premium gift wrapping options at checkout for a small additional fee.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq8">
+          Are your products handmade?
+        </button>
+      </h2>
+      <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Many of our items are handcrafted by skilled artisans, ensuring unique and high-quality pieces.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq9">
+          Do you have physical stores?
+        </button>
+      </h2>
+      <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Currently we operate online only, but we plan to open showrooms in select cities soon.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq10">
+          How do I contact customer support?
+        </button>
+      </h2>
+      <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          You can reach us via the contact page form or email us directly at support@loomandlane.com.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq11">
+          Do you offer discounts or promotions?
+        </button>
+      </h2>
+      <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Yes, we run seasonal promotions and offer discounts to newsletter subscribers.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq12">
+          Can I customize my order?
+        </button>
+      </h2>
+      <div id="faq12" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Some products can be customized — please check product details or contact us for options.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">About Us</h5>
+        <p>
+          Loom & Lane brings elegant, artistic, and high-quality craftsmanship to your lifestyle.
+        </p>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html" class="text-light">Home</a></li>
+          <li><a href="listing.html" class="text-light">Products</a></li>
+          <li><a href="faq.html" class="text-light">FAQ</a></li>
+          <li><a href="contact.html" class="text-light">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Follow Us</h5>
+        <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="text-light me-3"><i class="fab fa-youtube fa-lg"></i></a>
+      </div>
+    </div>
+
+    <hr class="border-secondary">
+    <div class="text-center small">
+      © <span id="year"></span> Loom & Lane — All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script>
+  LL.initPage('faq');
+</script>
+
+<!-- AI Assistant Icon -->
+<button class="ai-assistant-icon1" id="chatbotToggle1">
+  <img src="pictures/chatbot.jpg" alt="AI Assistant" class="chatbot-photo1">
+</button>
+
+<!-- Chatbot Box -->
+<div id="chatbot1">
+  <div class="chat-header1">
+    AI Assistant
+    <span id="closeChat1">&times;</span>
+  </div>
+  <div class="chat-body1" id="chatBody1"></div>
+  <div class="chat-footer1">
+    <input type="text" id="userInput1" placeholder="Type a message...">
+    <button id="sendBtn1">Send</button>
+  </div>
+</div>
+</body>
+</html>

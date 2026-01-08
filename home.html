@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Loom & Lane — Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Shipping Banner -->
+<div class="shipping-banner text-center"> 
+  <i class="fa fa-truck me-2"></i> 
+  <span>✨ Free International Shipping on Orders Over $100 ✨</span> 
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg"> 
+  <div class="container"> 
+    <a class="navbar-brand" href="home.html">
+      <img src="pictures/WL.png" alt="Loom & Lane Logo" class="logo-img">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navMenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="listing.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Search form - Simplified version -->
+<div class="d-flex me-3 search-wrapper" id="searchWrapper">
+  <div class="input-group">
+    <input type="text" 
+           class="form-control search-input" 
+           id="searchInput"
+           placeholder="Search products..."
+           aria-label="Search">
+    <button class="btn btn-accent" type="button" id="searchButton">
+      <i class="fa fa-search"></i>
+    </button>
+  </div>
+  
+  <!-- Search suggestions dropdown -->
+  <div class="search-suggestions" id="searchSuggestions"></div>
+</div>
+
+<!-- Search Results Modal -->
+<div class="modal fade" id="searchResultsModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Search Results</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="searchResultsContainer"></div>
+        <div id="noResultsMessage" class="text-center py-4" style="display: none;">
+          <i class="fa fa-search display-6 text-muted mb-3"></i>
+          <p class="text-muted">No products found. Try different keywords.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Dark mode icon -->
+      <div class="d-flex align-items-center gap-3">
+        <button class="icon-btn" id="darkModeToggle">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <!-- Cart button -->
+        <a href="cart.html" class="btn btn-outline-secondary position-relative">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero container my-4">
+  <div class="p-5 rounded-4 hero-bg text-white text-center">
+    <h1 class="display-6 fw-semibold hero-heading">Handcrafted elegance for your home</h1>
+    <p class="lead mt-2">Discover decor, crafts, and accessories inspired by Sri Lankan artistry.</p>
+    <a href="listing.html" class="btn btn-accent mt-3">Shop Now</a>
+  </div>
+</section>
+
+<!-- Featured Products -->
+<section class="container my-5" id="homeFeatured">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="h4 mb-0">Featured Products</h2>
+    <a href="listing.html" class="btn btn-link">View All Products</a>
+  </div>
+
+  <div class="row g-3">
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="pictures/Wooden Crafts/wood lamp.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+        <div class="card-body">
+          <h5 class="card-title">Signature Wooden Lamp</h5>
+          <p class="card-text">$35.00</p>
+          <a href="details.html?id=wc010" class="btn btn-sm btn-accent">View</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="pictures/Porcelain Items/teaset.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+        <div class="card-body">
+          <h5 class="card-title">Porcelain Tea Set with Kettle</h5>
+          <p class="card-text">$60.00</p>
+          <a href="details.html?id=pi006" class="btn btn-sm btn-accent">View</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="pictures/Accessories/Fhandbag.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+        <div class="card-body">
+          <h5 class="card-title">Handcrafted Handbag</h5>
+          <p class="card-text">$45.00</p>
+          <a href="details.html?id=ac007" class="btn btn-sm btn-accent">View</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Promotion Banner -->
+<section class="container my-5">
+  <div class="promotion-banner p-4 rounded-3 text-center text-white">
+    <h2 class="h5 mb-2"><i class="fa fa-gift me-2"></i> Special Promotion</h2>
+    <p class="mb-0">Get 20% off all Wooden Crafts this week only!</p>
+    <a href="listing.html?category=Wooden Crafts" class="btn btn-accent mt-3">Shop Wooden Crafts</a>
+  </div>
+</section>
+
+<!-- Shop by Category -->
+<section class="container my-5" id="homeCategories">
+  <h2 class="h4 mb-3">Shop by category</h2>
+  <div class="row g-3">
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="listing.html?category=Home Decorations" class="text-decoration-none">
+        <div class="card h-100">
+          <img src="pictures/Home Decorations/fpage.jpg" class="card-img-top" style="height:180px; object-fit:cover;">
+          <div class="card-body text-center"><strong>Home Decorations</strong></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="listing.html?category=Wooden Crafts" class="text-decoration-none">
+        <div class="card h-100">
+          <img src="pictures/Wooden Crafts/wpage.jpg" class="card-img-top" style="height:180px; object-fit:cover;">
+          <div class="card-body text-center"><strong>Wooden Crafts</strong></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="listing.html?category=Porcelain Items" class="text-decoration-none">
+        <div class="card h-100">
+          <img src="pictures/Porcelain Items/ppage.jpg" class="card-img-top" style="height:180px; object-fit:cover;">
+          <div class="card-body text-center"><strong>Porcelain Items</strong></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="listing.html?category=Flower Arrangements" class="text-decoration-none">
+        <div class="card h-100">
+          <img src="pictures/Farrangement/flpage.jpg" class="card-img-top" style="height:180px; object-fit:cover;">
+          <div class="card-body text-center"><strong>Flower Arrangements</strong></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="listing.html?category=Accessories" class="text-decoration-none">
+        <div class="card h-100">
+          <img src="pictures/Accessories/Apage.jpg" class="card-img-top" style="height:180px; object-fit:cover;">
+          <div class="card-body text-center"><strong>Accessories</strong></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">About Us</h5>
+        <p>
+          Loom & Lane brings elegant, artistic, and high‑quality craftsmanship to your lifestyle. 
+          We celebrate creativity and tradition, offering home décor, wooden crafts, porcelain items, 
+          flower arrangements, and accessories that make every space feel special.
+        </p>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html" class="text-light">Home</a></li>
+          <li><a href="listing.html" class="text-light">Products</a></li>
+          <li><a href="faq.html" class="text-light">FAQ</a></li>
+          <li><a href="contact.html" class="text-light">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Follow Us</h5>
+        <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="text-light me-3"><i class="fab fa-youtube fa-lg"></i></a>
+      </div>
+    </div>
+
+    <hr class="border-secondary">
+    <div class="text-center small">
+      © <span id="year"></span> Loom & Lane — All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<!-- Scripts - Removed duplicate chatbot.js -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="search.js"></script>
+<script src="chatbot.js"></script> <!--  chatbot.js  -->
+
+<script>
+  LL.initPage('home');
+</script>
+
+<!-- AI Assistant Icon -->
+<button class="ai-assistant-icon1" id="chatbotToggle1">
+  <img src="pictures/chatbot.jpg" alt="AI Assistant" class="chatbot-photo1">
+</button>
+
+<!-- Chatbot Box -->
+<div id="chatbot1">
+  <div class="chat-header1">
+    AI Assistant
+    <span id="closeChat1">&times;</span>
+  </div>
+  <div class="chat-body1" id="chatBody1"></div>
+  <div class="chat-footer1">
+    <input type="text" id="userInput1" placeholder="Type a message...">
+    <button id="sendBtn1">Send</button>
+  </div>
+</div>
+</body>
+</html>
